@@ -1,0 +1,2902 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>MD MINHAZ UDDIN | Portfolio</title>
+  <!-- Universal Favicon Support (Desktop, iOS Safari, Android Chrome, Windows) -->
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon.png?v=2">
+  <link rel="icon" type="image/png" sizes="192x192" href="assets/img/favicon.png?v=2">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon.png?v=2">
+  <link rel="apple-touch-icon" href="assets/img/favicon.png?v=2">
+  <link rel="shortcut icon" href="assets/img/favicon.ico?v=2" type="image/x-icon">
+  <meta name="theme-color" content="#0d061f">
+  <meta name="msapplication-TileColor" content="#0d061f">
+  <meta name="msapplication-TileImage" content="assets/img/favicon.png?v=2">
+  
+  <!-- CSS Frameworks -->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&family=Space+Grotesk:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --primary-teal: #05d0a4; /* Vibrant, bright neon teal that shines on dark backgrounds */
+      --hover-teal: #00f0bd;   /* Lighter glow hover state */
+      --bg-light: #0d061f;     /* Deep violet-black space background */
+      --text-dark: #f8fafc;    /* Clean bright white-slate */
+      --text-gray: #a29cb6;    /* Elegant lavender-silver secondary text */
+      --border-color: rgba(141, 79, 247, 0.18); /* Translucent glowing cosmic purple border */
+      --sidebar-width: 250px;
+    }
+
+          /* Background Style and color */  
+        body {
+        font-family: 'Source Sans Pro', sans-serif;
+        background-color: #060211 !important;
+        background-image: 
+          url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='48.497' viewBox='0 0 28 48.497'%3E%3Cpath d='M14 0 L28 8.083 L28 24.249 L14 32.331 L0 24.249 L0 8.083 Z' fill='none' stroke='%238c71ff' stroke-opacity='0.14' stroke-width='1'/%3E%3C/svg%3E"),
+          url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='48.497' viewBox='0 0 28 48.497'%3E%3Cpath d='M14 0 L28 8.083 L28 24.249 L14 32.331 L0 24.249 L0 8.083 Z' fill='none' stroke='%238c71ff' stroke-opacity='0.14' stroke-width='1'/%3E%3C/svg%3E"),
+          radial-gradient(circle at 10% 20%, rgba(123, 97, 255, 0.38) 0%, transparent 45%),
+          radial-gradient(circle at 50% 50%, rgba(139, 92, 246, 0.22) 0%, transparent 50%),
+          radial-gradient(circle at 85% 80%, rgba(99, 102, 241, 0.15) 0%, transparent 45%) !important;
+        background-size: 20px 34.641px, 20px 34.641px, 100% 100%, 100% 100%, 100% 100% !important;
+        background-position: 0 0, 10px 17.320px, 0 0, 0 0, 0 0 !important;
+        background-repeat: repeat, repeat, no-repeat, no-repeat, no-repeat !important;
+        background-attachment: fixed !important;
+        color: var(--text-dark);
+        overflow-x: hidden;
+      }
+
+    /* Scroll Behavior */
+    html {
+      scroll-behavior: smooth;
+    }
+
+    /* Sidebar Layout Style */
+    #sidebar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: var(--sidebar-width);
+      height: 100vh;
+      background: rgba(9, 4, 22, 0.72) !important;
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-right: 1.5px solid rgba(5, 208, 164, 0.35) !important;
+      box-shadow: 0 0 30px rgba(5, 208, 164, 0.22) !important;
+      z-index: 1000;
+      transition: all 0.3s ease;
+      display: flex;
+      flex-direction: column;
+      padding: 0;
+    }
+
+    .sidebar-header {
+      padding: 30px 20px;
+      text-align: center;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+      background: transparent !important;
+    }
+
+    .sidebar-header .avatar-container {
+      width: 100px;
+      height: 100px;
+      margin: 0 auto 15px;
+      border-radius: 50%;
+      overflow: hidden;
+      border: 3px solid var(--primary-teal);
+      box-shadow: 0 0 15px rgba(5, 208, 164, 0.3);
+      transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+      cursor: pointer;
+    }
+
+    .sidebar-header .avatar-container:hover {
+      border-color: var(--hover-teal);
+      box-shadow: 0 0 25px rgba(5, 208, 164, 0.7);
+      transform: scale(1.05);
+    }
+
+    .sidebar-header .avatar-container img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .sidebar-header h4 {
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: var(--primary-teal);
+      margin-bottom: 4px;
+    }
+
+    .sidebar-header p {
+      font-size: 0.85rem;
+      color: var(--text-gray);
+      margin: 0;
+    }
+
+    .sidebar-nav {
+      list-style: none;
+      padding: 20px 0;
+      margin: 0;
+      flex-grow: 1;
+      overflow-y: auto;
+    }
+
+    .sidebar-nav li a {
+      display: flex;
+      align-items: center;
+      padding: 12px 25px;
+      color: #cbd5e1 !important;
+      font-weight: 600;
+      font-size: 0.95rem;
+      text-decoration: none;
+      transition: all 0.2s ease;
+    }
+
+    .sidebar-nav li a:hover, 
+    .sidebar-nav li.active a {
+      color: var(--primary-teal) !important;
+      background-color: rgba(5, 208, 164, 0.1) !important;
+      border-left: 4px solid var(--primary-teal);
+      padding-left: 21px;
+    }
+
+    .sidebar-nav li a i {
+      margin-right: 15px;
+      width: 20px;
+      text-align: center;
+      font-size: 1.1rem;
+      color: #94a3b8 !important;
+      transition: color 0.2s ease;
+    }
+
+    .sidebar-nav li a:hover i,
+    .sidebar-nav li.active a i {
+      color: var(--primary-teal) !important;
+    }
+
+    /* Main Content Layout Styles */
+    #main-content {
+      margin-left: var(--sidebar-width);
+      padding: 0;
+      min-height: 100vh;
+      background: transparent !important;
+      transition: all 0.3s ease;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* Scrollable sections with full-viewport height */
+    html {
+      scroll-behavior: smooth;
+    }
+
+    section {
+      display: block !important;
+      opacity: 1 !important;
+      min-height: 100vh;
+      padding: 60px 0 100px 0; /* Elegant top and bottom padding */
+      box-sizing: border-box;
+      position: relative;
+      scroll-margin-top: 0px;
+      border-bottom: 1px dashed var(--border-color); /* Subtle dividers between sections */
+    }
+
+    section:last-of-type {
+      border-bottom: none; /* No separator line for the last section */
+    }
+
+    .hero-section {
+      padding: 60px 20px;
+      background: transparent;
+      min-height: 100vh;
+      display: flex !important;
+      align-items: center;
+      justify-content: center;
+      box-sizing: border-box;
+      border-bottom: 1px dashed var(--border-color);
+    }
+
+    @media (max-width: 991.98px) {
+      section {
+        padding: 40px 0 60px 0;
+        min-height: calc(100vh - 60px); /* Accommodate mobile header */
+        scroll-margin-top: 60px; /* Offset to prevent header from overlapping when scrolled to */
+      }
+      .hero-section {
+        min-height: calc(100vh - 60px);
+        padding: 40px 10px;
+      }
+    }
+
+    /* Mobile Header Navigation */
+    .mobile-header {
+      background: var(--bg-light);
+      border-bottom: 1px solid var(--border-color);
+      padding: 15px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 999;
+    }
+
+    .mobile-header h4 {
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--primary-teal);
+      margin: 0;
+    }
+
+    .toggle-btn {
+      background: none;
+      border: none;
+      font-size: 1.3rem;
+      color: var(--primary-teal);
+      cursor: pointer;
+    }
+
+    /* Banners styling as shown in screenshot */
+    .section-banner {
+      background-color: var(--primary-teal);
+      color: #ffffff;
+      padding: 12px 24px;
+      font-size: 1.2rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-top: 30px;
+      margin-bottom: 25px;
+      border-radius: 2px;
+    }
+
+    .hero-content h1 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: var(--primary-teal);
+      margin-bottom: 10px;
+    }
+
+    .hero-content h2 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: clamp(1.3rem, 3.5vw, 2.0rem);
+      font-weight: 600;
+      color: rgba(248, 250, 252, 0.9);
+      margin-bottom: 24px;
+      letter-spacing: -0.5px;
+      display: inline-flex;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .hero-content h2 .typed-text {
+      font-weight: 800;
+      background: linear-gradient(135deg, var(--primary-teal) 0%, #30b6ff 50%, #a855f7 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-left: 8px;
+      letter-spacing: -0.5px;
+      text-shadow: 0 0 45px rgba(5, 208, 164, 0.25);
+    }
+
+    .hero-content h2 .typed-cursor {
+      color: var(--primary-teal);
+      margin-left: 4px;
+      font-weight: 400;
+      animation: blink 0.9s infinite;
+    }
+
+    @keyframes blink {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0; }
+    }
+
+    .hero-content p {
+      color: var(--text-gray);
+      font-size: 1.05rem;
+      line-height: 1.6;
+      margin-bottom: 25px;
+      max-width: 600px;
+    }
+
+    .hero-img img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    /* Resume and standard button colors */
+    .btn-teal {
+      background-color: var(--primary-teal);
+      color: #ffffff;
+      font-weight: 600;
+      padding: 10px 24px;
+      border: none;
+      border-radius: 4px;
+      display: inline-flex;
+      align-items: center;
+      transition: background-color 0.2s ease, transform 0.1s ease;
+    }
+
+    .btn-teal i {
+      margin-right: 8px;
+    }
+
+    .btn-teal:hover {
+      background-color: var(--hover-teal);
+      color: #ffffff;
+      text-decoration: none;
+    }
+
+    /* About Section Styles */
+    .about-img-box {
+      display: block;
+      text-align: center;
+    }
+
+    .about-img-box img {
+      border-radius: 8px;
+      border: 1px solid rgba(141, 79, 247, 0.35) !important;
+      box-shadow: 0 10px 40px rgba(141, 79, 247, 0.2), 0 0 20px rgba(5, 208, 164, 0.08) !important;
+    }
+
+    .about-text h3 {
+      font-size: 1.7rem;
+      font-weight: 700;
+      color: var(--text-dark);
+      margin-bottom: 15px;
+    }
+
+    .about-text p {
+      font-size: 1rem;
+      line-height: 1.6;
+      color: var(--text-gray);
+      margin-bottom: 20px;
+    }
+
+    .focus-badge {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--text-dark);
+      margin-bottom: 20px;
+    }
+
+    .focus-badge span {
+      color: var(--primary-teal);
+    }
+
+    /* Projects styling cards */
+    .project-card {
+      display: block;
+      color: inherit !important;
+      text-decoration: none !important;
+      cursor: pointer;
+      background: rgba(18, 10, 41, 0.45) !important;
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+      border: 1px solid rgba(141, 79, 247, 0.15) !important;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25) !important;
+      transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+      height: 100%;
+    }
+
+    .project-card:hover {
+      transform: translateY(-5px);
+      border-color: rgba(5, 208, 164, 0.35) !important;
+      box-shadow: 0 12px 40px rgba(5, 208, 164, 0.15) !important;
+    }
+
+    .project-img {
+      height: 180px;
+      overflow: hidden;
+    }
+
+    .project-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: top;
+      transition: object-position 3.5s ease-in-out;
+    }
+
+    .project-card:hover .project-img img {
+      object-position: bottom;
+    }
+
+    .project-body {
+      padding: 20px;
+    }
+
+    .project-body h4 {
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: var(--primary-teal);
+      margin-bottom: 10px;
+    }
+
+    .project-body p {
+      font-size: 0.95rem;
+      color: var(--text-gray);
+      line-height: 1.5;
+      margin: 0;
+    }
+
+    /* Skill Blocks layout */
+    .skill-card {
+      background: rgba(18, 10, 41, 0.45) !important;
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+      border: 1px solid rgba(141, 79, 247, 0.15) !important;
+      border-radius: 8px;
+      padding: 20px;
+      margin-bottom: 25px;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25) !important;
+    }
+
+    .skill-card h4 {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--text-dark);
+      margin-bottom: 20px;
+      border-bottom: 1px solid var(--border-color);
+      padding-bottom: 8px;
+      text-transform: uppercase;
+    }
+
+    .skills-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .skill-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 75px;
+      text-align: center;
+    }
+
+    .skill-icon {
+      width: 44px;
+      height: 44px;
+      margin-bottom: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .skill-icon svg, .skill-icon img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+
+    .skill-item span {
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: var(--text-dark);
+    }
+
+    /* Education timing timeline blocks */
+    .education-card {
+      background: rgba(18, 10, 41, 0.45) !important;
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+      border: 1px solid rgba(141, 79, 247, 0.15) !important;
+      border-radius: 8px;
+      padding: 24px;
+      height: 100%;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25) !important;
+      transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    }
+
+    .education-card:hover {
+      border-color: rgba(5, 208, 164, 0.35) !important;
+      box-shadow: 0 12px 40px rgba(5, 208, 164, 0.15) !important;
+      transform: translateY(-4px);
+    }
+
+    .education-card h3 {
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: var(--primary-teal);
+      margin-bottom: 12px;
+      text-transform: uppercase;
+    }
+
+    .education-card .institute {
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--text-dark);
+      margin-bottom: 8px;
+    }
+
+    .education-card ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .education-card ul li {
+      position: relative;
+      padding-left: 15px;
+      color: var(--text-gray);
+      margin-bottom: 6px;
+      font-size: 0.95rem;
+    }
+
+    .education-card ul li::before {
+      content: "•";
+      color: var(--primary-teal);
+      font-weight: bold;
+      display: inline-block;
+      width: 1em;
+      margin-left: -1em;
+      position: absolute;
+      left: 10px;
+    }
+
+    /* Contact Section Custom Design (Refined Responsive Grid with Glowing Cards) */
+    .contact-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
+      padding: 10px;
+      width: 100%;
+    }
+    
+    @media (max-width: 768px) {
+      .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+      }
+    }
+    
+    .contact-card {
+      background: rgba(13, 6, 31, 0.45);
+      border: 1.5px solid rgba(5, 208, 164, 0.25);
+      border-radius: 12px;
+      padding: 35px 24px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+      position: relative;
+      overflow: hidden;
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+    }
+    
+    .contact-card:hover {
+      border-color: rgba(5, 208, 164, 0.6);
+      box-shadow: 0 0 25px rgba(5, 208, 164, 0.22);
+      transform: translateY(-4px);
+    }
+    
+    .contact-card-icon {
+      font-size: 3.2rem;
+      color: var(--primary-teal);
+      margin-bottom: 20px;
+      filter: drop-shadow(0 0 8px rgba(5, 208, 164, 0.35));
+      transition: all 0.3s ease;
+    }
+    
+    .contact-card:hover .contact-card-icon {
+      filter: drop-shadow(0 0 15px rgba(5, 208, 164, 0.7));
+      transform: scale(1.08);
+    }
+
+    .contact-card-title {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 1.35rem;
+      font-weight: 700;
+      color: var(--primary-teal);
+      margin-bottom: 12px;
+      letter-spacing: 0.3px;
+    }
+    
+    .contact-card-link-single {
+      font-size: 1.05rem;
+      font-weight: 500;
+      color: #9bf1dd;
+      text-decoration: none;
+      transition: all 0.2s ease;
+      word-break: break-all;
+    }
+    
+    .contact-card-link-single:hover {
+      color: #ffffff;
+      text-decoration: none;
+      filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.5));
+    }
+    
+    /* Social Icons inside Our Socials Card */
+    .contact-social-icons-row {
+      display: flex;
+      gap: 22px;
+      margin-bottom: 18px;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .contact-social-icons-row a {
+      text-decoration: none;
+      display: inline-block;
+    }
+    
+    .contact-social-icons-row i {
+      font-size: 3rem;
+      color: var(--primary-teal);
+      filter: drop-shadow(0 0 8px rgba(5, 208, 164, 0.35));
+      transition: all 0.3s ease;
+    }
+    
+    .contact-social-icons-row a:hover i {
+      color: #ffffff;
+      filter: drop-shadow(0 0 16px rgba(5, 208, 164, 0.75));
+      transform: scale(1.1);
+    }
+    
+    .contact-social-links-list {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      align-items: center;
+    }
+    
+    .contact-social-links-list a {
+      font-size: 0.95rem;
+      font-weight: 500;
+      color: #9bf1dd;
+      text-decoration: none;
+      transition: all 0.2s ease;
+    }
+    
+    .contact-social-links-list a:hover {
+      color: #ffffff;
+      text-decoration: none;
+      filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.5));
+    }
+    
+    /* Contact Now Neon Capsule Button */
+    .contact-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, rgba(5, 208, 164, 0.95) 0%, rgba(30, 20, 70, 0.95) 100%);
+      color: #ffffff;
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 0.95rem;
+      font-weight: 700;
+      padding: 10px 28px;
+      border-radius: 50px;
+      text-decoration: none;
+      border: 1.5px solid rgba(5, 208, 164, 0.4);
+      box-shadow: 0 0 15px rgba(5, 208, 164, 0.35);
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      margin-top: 5px;
+    }
+    
+    .contact-btn:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 22px rgba(5, 208, 164, 0.65);
+      background: linear-gradient(135deg, rgba(5, 208, 164, 1) 0%, rgba(45, 30, 100, 0.95) 100%);
+      color: #ffffff;
+      text-decoration: none;
+      border-color: rgba(5, 208, 164, 0.85);
+    }
+
+    /* Resume Embed Style & Custom Chrome-style PDF Viewer */
+    .resume-embed-container {
+      border: 1px solid rgba(141, 79, 247, 0.15) !important;
+      border-radius: 8px;
+      overflow: hidden;
+      background: rgba(18, 10, 41, 0.45) !important;
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25) !important;
+    }
+
+    .pdf-viewer-outer-wrap {
+      width: 100%;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 0 30px rgba(5, 208, 164, 0.22) !important;
+      border: 1.5px solid rgba(5, 208, 164, 0.35) !important;
+      display: block;
+      margin-bottom: 0px !important;
+      transition: all 0.3s ease;
+    }
+    
+    .pdf-viewer-outer-wrap:hover {
+      box-shadow: 0 0 40px rgba(5, 208, 164, 0.35) !important;
+      border-color: rgba(5, 208, 164, 0.5) !important;
+    }
+
+    .chrome-pdf-frame {
+      border: none;
+      background: #202124;
+      display: block;
+      width: 100%;
+      height: 750px;
+    }
+    
+    @media (max-width: 768px) {
+      .chrome-pdf-frame {
+        height: 520px;
+      }
+    }
+    
+    .pdf-toolbar {
+      height: 48px;
+      background-color: #323639;
+      color: #f1f5f9;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 16px;
+      user-select: none;
+      z-index: 50;
+      border-bottom: 1px solid #1c1e20;
+    }
+    
+    .pdf-toolbar-left, .pdf-toolbar-center, .pdf-toolbar-right {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+    
+    .pdf-toolbar-center {
+      gap: 12px;
+    }
+    
+    .pdf-title-text {
+      font-size: 0.88rem;
+      font-weight: 600;
+      letter-spacing: 0.3px;
+      color: #e2e8f0;
+      max-width: 150px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    
+    @media (min-width: 576px) {
+      .pdf-title-text {
+        max-width: 300px;
+      }
+    }
+    
+    .pdf-btn {
+      background: transparent;
+      border: none;
+      color: #f1f5f9;
+      cursor: pointer;
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      outline: none;
+      transition: background-color 0.15s, color 0.15s;
+    }
+    
+    .pdf-btn:hover {
+      background-color: rgba(255, 255, 255, 0.1);
+      color: #ffffff;
+    }
+    
+    .pdf-btn:active {
+      background-color: rgba(255, 255, 255, 0.15);
+    }
+    
+    .pdf-btn.active {
+      background-color: rgba(255, 255, 255, 0.15);
+      color: #ffffff;
+    }
+    
+    .pdf-page-controls {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    
+    .pdf-page-input {
+      width: 42px;
+      height: 24px;
+      text-align: center;
+      border: 1px solid #444;
+      border-radius: 4px;
+      background-color: #202124;
+      color: #ffffff;
+      font-size: 0.85rem;
+      padding: 0;
+      outline: none;
+      transition: border-color 0.15s;
+    }
+    
+    .pdf-page-input:focus {
+      border-color: #1a73e8;
+    }
+    
+    .pdf-text-light {
+      font-size: 0.85rem;
+      color: #cbd5e1;
+    }
+    
+    .pdf-separator {
+      color: #555;
+      font-size: 0.9rem;
+      user-select: none;
+      margin: 0 4px;
+    }
+    
+    .pdf-zoom-select-wrap {
+      position: relative;
+      display: inline-flex;
+      align-items: center;
+      background-color: #202124;
+      border: 1px solid #444;
+      border-radius: 4px;
+      padding: 0 24px 0 8px;
+      height: 24px;
+      cursor: pointer;
+      user-select: none;
+    }
+    
+    .pdf-zoom-select {
+      background: transparent;
+      border: none;
+      color: #ffffff;
+      font-size: 0.85rem;
+      font-weight: 600;
+      outline: none;
+      cursor: pointer;
+      appearance: none;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      padding-right: 2px;
+    }
+    
+    .pdf-zoom-select option {
+      background-color: #323639;
+      color: #ffffff;
+    }
+    
+    .pdf-zoom-arrow {
+      position: absolute;
+      right: 8px;
+      font-size: 0.65rem;
+      color: #cbd5e1;
+      pointer-events: none;
+    }
+    
+    .pdf-main-container {
+      display: flex;
+      height: 800px;
+      background-color: #525659;
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .pdf-sidebar {
+      width: 180px;
+      background-color: #202124;
+      border-right: 1px solid #1c1e20;
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      transition: margin-left 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    
+    .pdf-sidebar.collapsed {
+      margin-left: -180px;
+    }
+    
+    .pdf-sidebar-title {
+      font-size: 0.72rem;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      font-weight: 700;
+      padding: 12px 14px;
+      color: #94a3b8;
+      border-bottom: 1px solid #1c1e20;
+      margin: 0;
+    }
+    
+    .pdf-thumbnails-scroll {
+      flex: 1;
+      overflow-y: auto;
+      padding: 15px 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+    
+    .pdf-thumbnail-wrap {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 6px;
+      cursor: pointer;
+    }
+    
+    .pdf-thumb-canvas-container {
+      padding: 4px;
+      border: 2px solid transparent;
+      border-radius: 4px;
+      background: rgba(255,255,255,0.03);
+      transition: border-color 0.15s, background-color 0.15s;
+    }
+    
+    .pdf-thumb-canvas-container:hover {
+      background-color: rgba(255,255,255,0.08);
+    }
+    
+    .pdf-thumbnail-wrap.active .pdf-thumb-canvas-container {
+      border-color: #1a73e8;
+      background-color: rgba(26, 115, 232, 0.15);
+    }
+    
+    .pdf-thumb-num {
+      font-size: 0.75rem;
+      color: #94a3b8;
+      font-weight: 600;
+    }
+    
+    .pdf-thumbnail-wrap.active .pdf-thumb-num {
+      color: #1a73e8;
+    }
+    
+    .pdf-workspace-area {
+      flex: 1;
+      height: 100%;
+      overflow: hidden;
+      position: relative;
+    }
+    
+    .pdf-pages-scroll {
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      padding: 24px 15px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 24px;
+      scroll-behavior: smooth;
+    }
+    
+    .pdf-page-card {
+      position: relative;
+      background-color: #ffffff;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.35);
+      border-radius: 2px;
+      padding: 0;
+      transition: transform 0.2s ease, rotate 0.2s ease;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .pdf-rendered-canvas {
+      display: block;
+      max-width: 100%;
+      height: auto;
+    }
+    
+    .pdf-loader-spinner {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(82, 86, 89, 0.8);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      color: #ffffff;
+      font-size: 1.05rem;
+      z-index: 10;
+    }
+    
+    .pdf-loader-spinner i {
+      font-size: 2.2rem;
+      color: #1a73e8;
+    }
+
+    /* Footer styled simply */
+    footer {
+      padding: 16px 10px;
+      text-align: center;
+      border-top: 1px solid var(--border-color);
+      background-color: var(--bg-light);
+      margin-top: 0px !important;
+    }
+
+    footer p {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 0.95rem;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      margin: 0;
+      display: inline-block;
+      background: linear-gradient(135deg, var(--primary-teal) 0%, #30b6ff 50%, #a855f7 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-shadow: 0 0 30px rgba(5, 208, 164, 0.15);
+    }
+
+    #resume {
+      min-height: auto !important;
+      padding-bottom: 24px !important;
+    }
+
+    @media (max-width: 991.98px) {
+      #resume {
+        padding-bottom: 16px !important;
+      }
+    }
+
+    /* Responsiveness adjustments */
+    @media (max-width: 991px) {
+      #sidebar {
+        left: -250px;
+      }
+      #sidebar.active {
+        left: 0;
+      }
+      #main-content {
+        margin-left: 0;
+      }
+    }
+    
+    @media (min-width: 992px) {
+      .mobile-header {
+        display: none !important;
+      }
+    }
+    
+    #particles-canvas {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      z-index: -1;
+      pointer-events: none;
+    }
+  </style>
+</head>
+<body>
+  <!-- Particles Canvas Background -->
+  <canvas id="particles-canvas"></canvas>
+
+  <!-- Sidebar Component -->
+  <div id="sidebar">
+    <div class="sidebar-header">
+      <div class="avatar-container">
+        <img src="assets/pic.png" alt="MD MINHAZ UDDIN">
+      </div>
+      <h4>MD MINHAZ UDDIN</h4>
+      <p>Web Developer</p>
+    </div>
+    <ul class="sidebar-nav">
+      <li class="active"><a href="#hero"><i class="fas fa-home"></i> Home</a></li>
+      <li><a href="#about"><i class="fas fa-user"></i> About</a></li>
+      <li><a href="#projects"><i class="fas fa-briefcase"></i> Projects</a></li>
+      <li><a href="#skills"><i class="fas fa-laptop-code"></i> Skills</a></li>
+      <li><a href="#education"><i class="fas fa-graduation-cap"></i> Education</a></li>
+      <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+      <li><a href="#resume"><i class="fas fa-file-pdf"></i> Resume</a></li>
+    </ul>
+  </div>
+
+  <!-- Main Content Wrapper -->
+  <div id="main-content">
+    
+    <!-- Mobile header menu toggle -->
+    <div class="mobile-header">
+      <h4>MD MINHAZ UDDIN</h4>
+      <button class="toggle-btn" id="sidebarToggle" aria-label="Toggle Sidebar Menu">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+
+    <!-- Hero/Greeting Section -->
+    <section id="hero" class="hero-section">
+      <div class="container-fluid">
+        <div class="row align-items-center">
+          <div class="col-lg-6 col-md-12 hero-content order-2 order-lg-1">
+            <h1>MD MINHAZ UDDIN</h1>
+            <h2>I'M <span class="typed-text">Web Developer</span><span class="typed-cursor">|</span></h2>
+            <p>السَّلاَمُ عَلَيْكُمْ وَرَحْمَةُ اللهِ وَبَرَكَاتُهُ 
+              <br> Assalamualaikum Warahmatullahi Wabarakatuh, 
+              <br> welcome to my web house! Since you're here, I assume that you know me a little bit. If not, don't worry. Here is all the information for you.</p>
+            <a href="assets/Minhaz_CV.pdf" id="get-resume-btn" class="btn-teal btn-lg text-white" download style="text-decoration: none;">
+              <i class="fas fa-download"></i> GET RESUME
+            </a>
+          </div>
+          <div class="col-lg-6 col-md-12 text-center hero-img order-1 order-lg-2 mb-4 mb-lg-0">
+            <img src="https://github.com/7oSkaaa/7oSkaaa/raw/main/Images/Right_Side.gif?raw=true" alt="Developer illustration animated" class="img-fluid" style="max-height: 380px;">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTENT SECTIONS -->
+    <div class="container-fluid px-4">
+      
+      <!-- ABOUT SECTION -->
+      <section id="about">
+        <div class="section-banner">About</div>
+        <div class="row align-items-center">
+          <div class="col-md-4 mb-4 mb-md-0 text-center">
+            <div class="about-img-box">
+              <img src="assets/pic.png" alt="MD MINHAZ UDDIN portrait picture" class="img-fluid" style="height: 340px; width: 270px; max-width: 100%; object-fit: cover; border-radius: 8px; display: inline-block;">
+            </div>
+          </div>
+          <div class="col-md-8 about-text">
+            <h3>Who is this dude?</h3>
+            <p>I am MD MINHAZ UDDIN. I am studying computer science. Always curious about the latest technology and updates in the web development field. I had a lot of interest in technology since school life. And before school life was over I became familiar with computer programming. Since then programming has been my main focus. I am looking for an opportunity to apply my skills and contribute to the growth of the company. For now, there is nothing more to say.</p>
+            <div class="focus-badge">
+              Current Focus: <span>React, Redux & Node</span>
+            </div>
+            <a href="#contact" class="btn-teal btn-lg text-white" style="text-decoration: none;">
+              <i class="fas fa-envelope"></i> CONTACT ME
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROJECTS SECTION -->
+      <section id="projects">
+        <div class="section-banner">Projects</div>
+        <div class="row">
+          
+          <!-- Project Card 1: Personal Portfolio -->
+          <div class="col-md-12 col-lg-4 mb-4">
+            <a href="https://mdminhazuddin.web.app/" class="project-card" target="_blank">
+              <div class="project-img">
+                <img src="assets/img/thumbnail_portfolio.png" alt="Personal Portfolio Screenshot representation" referrerPolicy="no-referrer">
+              </div>
+              <div class="project-body">
+                <h4>Personal Portfolio</h4>
+                <p>My personal portfolio website. It's a responsive react application.</p>
+              </div>
+            </a>
+          </div>
+
+          <!-- Project Card 2: ButterFly™ | Premium Men's Shirts -->
+          <div class="col-md-12 col-lg-4 mb-4">
+            <a href="https://butterfly-shirts.vercel.app/" class="project-card" target="_blank">
+              <div class="project-img">
+                <img src="assets/img/thumbnail_ecommerce website.png" alt="Ecommerce Website" referrerPolicy="no-referrer">
+              </div>
+              <div class="project-body">
+                <h4>ButterFly™ | Premium Men's Shirts</h4>
+                <p>This is my first E-commerce Website.
+                    I will only sell boys' shirts here, nothing else.</p>
+              </div>
+            </a>
+          </div>
+
+          <!-- Project Card 3: Cleanlux -->
+          <div class="col-md-12 col-lg-4 mb-4">
+            <a href="#" class="project-card" target="_blank">
+              <div class="project-img">
+                <img src="assets/img/thumbnail_cleanlux.png" alt="Cleanlux Services landing page representation" referrerPolicy="no-referrer">
+              </div>
+              <div class="project-body">
+                <h4>Cleanlux</h4>
+                <p>A React business services application. It's offers responsive client site and admin site</p>
+              </div>
+            </a>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- SKILLS SECTION -->
+      <section id="skills">
+        <div class="section-banner">Skills</div>
+        <div class="row">
+          
+          <!-- Category 1: HTML -->
+          <div class="col-md-6 col-lg-4">
+            <div class="skill-card">
+              <h4>HTML</h4>
+              <div class="skills-grid">
+                
+                <!-- HTML5 -->
+                <div class="skill-item">
+                  <div class="skill-icon">
+                    <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path fill="#E34F26" d="M71.5 450.5l34.4-386.4h302.2l34.4 386.4-185.7 51.5z"/><path fill="#EF652A" d="M256.8 472.1l148.3-41.2 30.7-344.6h-179z"/><path fill="#EAEAEA" d="M256.8 214.3h-52.9l-3.6-40.7h56.5v-41.6h-101.8l10.7 121h91.1zm0 102.3l-.2.1-47.6-12.9-3-34.2h-41.5l5.9 66.5 86.2 24 1.1-.3z"/><path fill="#FFF" d="M256 132v41.6h55l-5.2 58.7H256v41.6h41.3l-8.4 94.3-42.9 11.6V421l86-23.9 16.5-185.3 4-43.9H256z"/></svg>
+                  </div>
+                  <span>HTML5</span>
+                </div>
+
+                <!-- JSX -->
+                <div class="skill-item">
+                  <div class="skill-icon">
+                    <svg viewBox="-11.5 -10.23174 23 20.46348" xmlns="http://www.w3.org/2000/svg"><circle r="2.05" fill="#61dafb"/><g fill="none" stroke="#61dafb" stroke-width="1"><ellipse rx="11" ry="4.2"/><ellipse rx="11" ry="4.2" transform="rotate(60)"/><ellipse rx="11" ry="4.2" transform="rotate(120)"/></g></svg>
+                  </div>
+                  <span>JSX</span>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 2: CSS -->
+          <div class="col-md-6 col-lg-4">
+            <div class="skill-card">
+              <h4>CSS</h4>
+              <div class="skills-grid">
+                
+                <!-- CSS3 -->
+                <div class="skill-item">
+                  <div class="skill-icon">
+                    <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path fill="#264de4" d="M71.5 450.5l34.4-386.4h302.2l34.4 386.4-185.7 51.5z"/><path fill="#2965f1" d="M256.8 472.1l148.3-41.2 30.7-344.6h-179z"/><path fill="#EAEAEA" d="M256.8 132v41.6H152.9l3.6 40.7h100.3V256H160.1l3.6 40.7h93.1v102.3l-.1.1-47.5-12.9-3-34.2h-41.5l5.9 66.5 86.2 24z"/><path fill="#FFF" d="M256 256h51.3l-4.8 54-46.5 12.6V364l86-23.9 13.9-156.4 3.7-41.6H256zm0-124v41.6h101.8l-3.7 41.6H256v41.6H351l-10 112.5-85 23z"/></svg>
+                  </div>
+                  <span>CSS3</span>
+                </div>
+
+                <!-- Bootstrap -->
+                <div class="skill-item">
+                  <div class="skill-icon">
+                    <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><rect width="512" height="512" rx="80" fill="#7952b3"/><path fill="#fff" d="M140.2 110h130.6c43.6 0 71.4 19.3 71.4 55.4 0 25.4-15 44-38.6 49.3v1c29 4.3 49 24.3 49 56.4 0 41-31.2 62-79.5 62H140.2V110zm54.5 106.3h71.6c20.4 0 31.8-8.2 31.8-23.7 0-14.7-11.4-22.3-31.8-22.3h-71.6v46zm0 102.3h79.5c23.2 0 35.4-9 35.4-26.3 0-16.7-12.2-25.3-35.4-25.3h-79.5v51.6z"/></svg>
+                  </div>
+                  <span>Bootstrap</span>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 3: Javascript -->
+          <div class="col-md-6 col-lg-4">
+            <div class="skill-card">
+              <h4>Javascript</h4>
+              <div class="skills-grid">
+                
+                <!-- Javascript -->
+                <div class="skill-item">
+                  <div class="skill-icon">
+                    <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><rect width="512" height="512" fill="#f7df1e"/><path d="M288 405.3c0 23.5-16.1 38.1-40.3 38.1-20.9 0-35.4-12.6-39.7-27.1h-33c4 30.6 30 55.1 72.7 55.1 44.5 0 73.1-24.3 73.1-61.9V274.7h-33v130.6zm154.2 19c-10.4 19.8-29.3 33.6-57.1 33.6-35.3 0-56.1-21-56.4-52.6h33c1.1 16.4 11.2 25 23.6 25 15.6 0 24.4-9.3 24.4-26.6v-120h-57c-32.5 0-54.3-17.8-54.3-49.8s21.8-49.8 54.3-49.8h90.1v235.2z"/></svg>
+                  </div>
+                  <span>Javascript</span>
+                </div>
+
+                <!-- React -->
+                <div class="skill-item">
+                  <div class="skill-icon">
+                    <svg viewBox="-11.5 -10.23174 23 20.46348" xmlns="http://www.w3.org/2000/svg"><circle r="2.05" fill="#61dafb"/><g fill="none" stroke="#61dafb" stroke-width="1"><ellipse rx="11" ry="4.2"/><ellipse rx="11" ry="4.2" transform="rotate(60)"/><ellipse rx="11" ry="4.2" transform="rotate(120)"/></g></svg>
+                  </div>
+                  <span>React</span>
+                </div>
+
+                <!-- Node -->
+                <div class="skill-item">
+                  <div class="skill-icon">
+                    <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path fill="#339933" d="M256 32L64 142.7v226.6L256 480l192-110.7V142.7zm112.5 130.6l-64 36.9v73.8l64-36.9zm-112.5-64.8l128 73.8-128 73.8-128-73.8zm-112.5 138.6l64-36.9v73.8l-64 36.9z"/></svg>
+                  </div>
+                  <span>Node</span>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 4: Python -->
+          <div class="col-md-6 col-lg-4">
+            <div class="skill-card">
+              <h4>Python</h4>
+              <div class="skills-grid">
+                
+                <!-- Python3 -->
+                <div class="skill-item">
+                  <div class="skill-icon">
+                    <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                      <path fill="#3776AB" d="M255.968 15.84c-66.976 0-115.68 5.76-115.68 53.488v37.472h117.072v17.472H94.288c-47.36 0-82.528 37.952-82.528 84.752v65.48c0 47.792 36.32 86.832 82.528 86.832h34.624v-48c0-57.36 46.128-103.488 103.488-103.488h119.472c28.512 0 52.8-23.712 52.8-52.8V154.08c0-47.744-48.368-84.752-115.712-84.752zm-47.456 30.048c10.192 0 18.432 8.24 18.432 18.432s-8.24 18.432-18.432 18.432c-10.192 0-18.432-8.24-18.432-18.432s8.24-18.432 18.432-18.432z"/>
+                      <path fill="#FFD343" d="M256.032 496.16c66.976 0 115.68-5.76 115.68-53.488V405.2H254.64v-17.472h163.088c47.36 0 82.528-37.952 82.528-84.752v-65.48c0-47.792-36.32-86.832-82.528-86.832h-34.624v48c0 57.36-46.128 103.488-103.488 103.488H159.04c-28.512 0-52.8 23.712-52.8 52.8v107.472c0 47.744 48.368 84.752 115.712 84.752zm47.456-30.048c-1.024 0-1.952-.096-2.912-.16a18.344 18.344 0 0 1-15.52-18.272c0-10.192 8.24-18.432 18.432-18.432s18.432 8.24 18.432 18.432c0 9.888-7.792 17.952-17.584 18.416-.272.016-.544.016-.848.016z"/>
+                    </svg>
+                  </div>
+                  <span>Python3</span>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 5: Database -->
+          <div class="col-md-6 col-lg-4">
+            <div class="skill-card">
+              <h4>Database</h4>
+              <div class="skills-grid">
+                
+                <!-- MongoDB -->
+                <div class="skill-item">
+                  <div class="skill-icon">
+                    <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                      <path fill="#13AA52" d="M265.4 34.6c-4.4 12.8-11.8 35-18.2 59-25.2 92.8-49.8 193.3-30.8 281.3 6 27.6 19.8 54.4 39.8 77.8.8.8 1.8 1.4 3 1.8V35h1.2z" />
+                      <path fill="#116149" d="M243.4 38.2v416.7c17.2-22.3 29-47.3 34.2-73.4 18-88.8-7-189-31.5-281-6.2-23.7-13.3-45.7-17.5-58.4l14.8-3.9z" />
+                      <path fill="#13AA52" d="M256.4 12.6V35c6.2 12.7 13.3 34.7 19.5 58.4 24.5 92 49.5 192.2 31.5 281-5.2 26.1-17 51.1-34.2 73.4l1.3.9c25.2-24.2 41.5-55.5 48.2-89.2 20.3-102.5-12.7-214-38.2-311.9-8-30.8-17.3-56.9-22-72.2l-6.1-3z" />
+                      <path fill="#499D4A" d="M255.4 12.6l-6.1 3c-4.7 15.3-14 41.4-22 72.2-25.5 97.9-58.5 209.4-38.2 311.9 6.7 33.7 23 65 48.2 89.2l1.3-.9c-17.2-22.3-29-47.3-34.2-73.4-18-88.8 7-189 31.5-281 6.2-23.7-13.3-45.7-17.5-58.4V12.6z" />
+                      <path fill="#116149" d="M250.4 445c4 5 7.8 9.8 11.5 14.5V499h-11.5v-54z" />
+                      <path fill="#13AA52" d="M261.9 445V499h11.5v-39.5c-3.7-4.7-7.5-9.5-11.5-14.5z" />
+                    </svg>
+                  </div>
+                  <span>MongoDB</span>
+                </div>
+
+                <!-- Supabase -->
+                <div class="skill-item">
+                  <div class="skill-icon">
+                    <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                      <g transform="translate(118, 113) scale(11)">
+                        <path fill="#3ECF8E" d="M16.2 0L2.3 15h9.3L1.1 24.3c-.6.6-.2 1.7.7 1.7H13L24.8 11h-9L24.3.7c.3-.6-.1-1.3-.8-.7z" />
+                        <path fill="#249662" d="M11 26h-9.9l13.9-15H5.7l10.5-10.3c.5-.5.2-1.3-.5-1.3H5.8L0 12.3c-.5.5-.2 1.3.5 1.3h9.3l-10.5 11c-.5.5-.2 1.4.5 1.4H11z" opacity="0.4" />
+                      </g>
+                    </svg>
+                  </div>
+                  <span>Supabase</span>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 6: Tools -->
+          <div class="col-md-6 col-lg-4">
+            <div class="skill-card">
+              <h4>Tools</h4>
+              <div class="skills-grid">
+                
+                <!-- Git -->
+                <div class="skill-item">
+                  <div class="skill-icon">
+                    <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path fill="#f03c2e" d="M495.9 238.1L273.9 16.1c-21.5-21.5-56.3-21.5-77.8 0L16.1 193.9c-21.5 21.5-21.5 56.3 0 77.8l222 222c21.5 21.5 56.3 21.5 77.8 0l180-180c21.5-21.5 21.5-56.3 0-77.8z"/><path fill="#fff" d="M256 128v114l50-50 14 14-74 74-74-74 14-14 50 50V128z"/></svg>
+                  </div>
+                  <span>Git</span>
+                </div>
+
+                <!-- Github -->
+                <div class="skill-item">
+                  <div class="skill-icon">
+                    <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path fill="#FFFFFF" d="M256 0C114.6 0 0 114.6 0 256c0 113.1 73.3 209.1 175 243 12.8 2.3 17.5-5.6 17.5-12.4 0-6.1-.2-22.3-.3-43.8-71.2 15.5-86.2-34.3-86.2-34.3-11.6-29.6-28.4-37.5-28.4-37.5-23.2-15.9 1.8-15.5 1.8-15.5 25.7 1.8 39.2 26.4 39.2 26.4 22.8 39 59.8 27.8 74.4 21.3 2.3-16.5 8.9-27.8 16.2-34.2-56.9-6.5-116.6-28.4-116.6-126.5 0-27.9 10-50.8 26.3-68.7-2.6-6.5-11.4-32.5 2.5-67.8 0 0 21.5-6.9 70.2 26.1a242.4 242.4 0 0 1 128.2 0c48.7-33 70.1-26.1 70.1-26.1 13.9 35.3 5.1 61.3 2.5 67.8 16.4 17.9 26.3 40.8 26.3 68.7 0 98.3-59.8 119.9-116.9 126.3 9.2 7.9 17.4 23.6 17.4 47.7 0 34.4-.3 62.2-.3 70.7 0 6.9 4.6 14.9 17.6 12.4C438.8 465 512 369 512 256 512 114.6 397.4 0 256 0z"/></svg>
+                  </div>
+                  <span>Github</span>
+                </div>
+
+                <!-- VS Code -->
+                <div class="skill-item">
+                  <div class="skill-icon">
+                    <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                      <path fill="#007ACC" d="M372 455V57c0-6.6-4-12.7-10.2-15.3-6.2-2.6-13.3-1.3-18.1 3.3L154.5 198.5l-95-71c-4.9-3.7-11.6-4.3-17.1-1.6S33.4 134.4 33.4 141v230c0 6.6 3.6 12.7 9.8 15.3 6.2 2.6 13.3 1.3 18.1-3.3l95-71 189.2 141.5c4.7 3.5 11.2 4.1 16.5 1.5s8.8-8 8.8-14.7zm-243.6-199L63.8 206.5V305.5L128.4 256zm106.3-43.1L299.4 256l-64.7 43.1V212.9z"/>
+                    </svg>
+                  </div>
+                  <span>VS Code</span>
+                </div>
+                
+                <!-- Code Blocks -->
+                <div class="skill-item">
+                  <div class="skill-icon">
+                    <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                      <!-- Cube 1: Red (Top Left) -->
+                      <g>
+                        <!-- Top Face -->
+                        <polygon points="170,100 230,135 170,170 110,135" fill="#EC7063" />
+                        <!-- Left Face -->
+                        <polygon points="110,135 170,170 170,240 110,205" fill="#C0392B" />
+                        <!-- Right Face -->
+                        <polygon points="170,170 230,135 230,205 170,240" fill="#922B21" />
+                      </g>
+                      <!-- Cube 2: Yellow (Top Right) -->
+                      <g transform="translate(172, 0)">
+                        <!-- Top Face -->
+                        <polygon points="170,100 230,135 170,170 110,135" fill="#F4D03F" />
+                        <!-- Left Face -->
+                        <polygon points="110,135 170,170 170,240 110,205" fill="#D4AC0D" />
+                        <!-- Right Face -->
+                        <polygon points="170,170 230,135 230,205 170,240" fill="#9A7D0A" />
+                      </g>
+                      <!-- Cube 3: Green (Bottom Left) -->
+                      <g transform="translate(0, 172)">
+                        <!-- Top Face -->
+                        <polygon points="170,100 230,135 170,170 110,135" fill="#58D68D" />
+                        <!-- Left Face -->
+                        <polygon points="110,135 170,170 170,240 110,205" fill="#27AE60" />
+                        <!-- Right Face -->
+                        <polygon points="170,170 230,135 230,205 170,240" fill="#1E8449" />
+                      </g>
+                      <!-- Cube 4: Blue (Bottom Right) -->
+                      <g transform="translate(172, 172)">
+                        <!-- Top Face -->
+                        <polygon points="170,100 230,135 170,170 110,135" fill="#5DADE2" />
+                        <!-- Left Face -->
+                        <polygon points="110,135 170,170 170,240 110,205" fill="#2980B9" />
+                        <!-- Right Face -->
+                        <polygon points="170,170 230,135 230,205 170,240" fill="#1F618D" />
+                      </g>
+                    </svg>
+                  </div>
+                  <span>Code Blocks</span>
+                </div>
+
+              
+                <!-- Firebase -->
+                <div class="skill-item">
+                  <div class="skill-icon">
+                    <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path fill="#FFCA28" d="M82.5 373.1L188 122.2c3.1-7.4 13.1-7.4 16.2 0l42.6 100.8z"/><path fill="#F57C00" d="M246.8 223l-42.6-100.8c-3.1-7.4-13.1-7.4-16.2 0L82.5 373.1c-4.2 9.9.5 21 10.2 24.5l145.4 51.5c5.4 1.9 11.2-2.1 11.2-7.8V441z"/><path fill="#E65100" d="M429.5 373.1c9.7-3.5 14.4-14.6 10.2-24.5L327.8 122.2c-3.1-7.4-13.1-7.4-16.2 0l-64.8 153.8z"/><path fill="#FFA000" d="M311.6 122.2L246.8 276l182.7 97.1c9.7-3.5 14.4-14.6 10.2-24.5z"/></svg>
+                  </div>
+                  <span>Firebase</span>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- EDUCATION SECTION -->
+      <section id="education">
+        <div class="section-banner">Education</div>
+        <div class="row text-left">
+          
+          <!-- Bechelor Of Science -->
+          <div class="col-md-6 mb-4">
+            <div class="education-card">
+              <h3>BSc in CSE</h3>
+              <div class="institute">Southeast University</div>
+              <ul>
+                <li>Computer Science</li>
+                <li>Session (2024-25)</li>
+                <li>Batch (19)</li>
+                <li>Running</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Diploma -->
+          <div class="col-md-6 mb-4">
+            <div class="education-card">
+              <h3>DIPLOMA IN COMPUTER TECHNOLOGY</h3>
+              <div class="institute">Lakshmipur Polytechnic Institute</div>
+              <ul>
+                <li>Computer Technology</li>
+                <li>Session (2018-19)</li>
+                <li>Batch (13)</li>
+                <li>Passed</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Secondary School -->
+          <div class="col-md-6 mb-4">
+            <div class="education-card">
+              <h3>SECONDARY SCHOOL CERTIFICATE</h3>
+              <div class="institute">Textile Vocational Institute</div>
+              <ul>
+                <li>Science</li>
+                <li>Session (2017-18)</li>
+                <li>Batch-11</li>
+                <li>Completed</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- CONTACT SECTION -->
+      <section id="contact">
+        <div class="section-banner">Contact</div>
+        <div class="row">
+          <div class="col-12 px-3">
+            
+            <div class="contact-grid">
+              
+              <!-- Card 1: Email -->
+              <div class="contact-card" id="email-card" style="cursor: pointer;">
+                <i class="fas fa-envelope contact-card-icon"></i>
+                <div class="contact-card-title">E-Mail Me At:</div>
+                <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=new" target="_blank" class="contact-card-link-single" id="email-link">minhaz.al.din@gmail.com</a>
+              </div>
+
+              <!-- Card 2: GitHub -->
+              <div class="contact-card">
+                <div class="contact-social-icons-row">
+                  <a href="https://github.com/minhazuddin0523" target="_blank" title="LinkedIn"><i class="fab fa-github"></i></a>
+                </div>
+                <div class="contact-card-title" style="margin-top: -5px;">Let's Check Code:</div>
+                <div class="contact-social-links-list">
+                  <a href="https://github.com/minhazuddin0523" target="_blank">MD Minhaz Uddin </a>
+                  
+                </div>
+              </div>
+
+              <!-- Card 3: LinkedIn -->
+              <div class="contact-card">
+                <div class="contact-social-icons-row">
+                  <a href="https://www.linkedin.com/in/minhazuddin0523/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                </div>
+                <div class="contact-card-title" style="margin-top: -5px;">LinkedIn</div>
+                <div class="contact-social-links-list">
+                  <a href="https://www.linkedin.com/in/minhazuddin0523/" target="_blank">MD Minhaz Uddin</a>
+                </div>
+              </div>
+
+              <!-- Card 4: Telegram -->
+              <div class="contact-card">
+                <div class="contact-social-icons-row">
+                  <a href="https://t.me/Minhazuddin7890" target="_blank" title="Telegram"><i class="fab fa-telegram-plane"></i></a>
+                </div>
+                <div class="contact-card-title" style="margin-top: -5px;">Telegram</div>
+                <div class="contact-social-links-list">
+                  <a href="https://t.me/Minhazuddin7890" target="_blank">MD Minhaz Uddin</a>
+                </div>
+              </div>
+
+              <!-- Card 5: FaceBook -->
+              <div class="contact-card">
+                <div class="contact-social-icons-row">
+                  <a href="https://facebook.com/MinhazUddin0523" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a>
+                </div>
+                <div class="contact-card-title" style="margin-top: -5px;">FaceBook</div>
+                <div class="contact-social-links-list">
+                  <a href="https://www.facebook.com/minhazuddinpersonal" target="_blank">MD Minhaz Uddin</a>
+                </div>
+              </div>
+
+
+
+              <!-- Card 6: Let's Work Together -->
+              <div class="contact-card" id="copy-card" style="cursor: pointer;">
+                <i class="fas fa-user contact-card-icon"></i>
+                <div class="contact-card-title">Let's Work Together!</div>
+                <button class="contact-btn" id="copy-btn">Contact Now</button>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- RESUME EMBED SECTION -->
+      <section id="resume">
+        <div class="section-banner">Resume</div>
+        
+        <div class="pdf-viewer-outer-wrap">
+          <iframe 
+            src="assets/Minhaz_CV.pdf#toolbar=1" 
+            class="chrome-pdf-frame"
+            id="pdf-frame">
+          </iframe>
+        </div>
+      </section>
+
+    </div>
+
+    <!-- Footnote -->
+    <footer>
+      <p>Copyright © 2026 All Right Reserved | MD MINHAZ UDDIN Portfolio</p>
+    </footer>
+
+  </div>
+
+  <!-- JavaScript Interaction scripts -->
+  <script>
+    // Ensure mailto links work inside nested/iframe environments safely with reliable clipboard copy feedback
+    document.addEventListener('DOMContentLoaded', () => {
+      // High-compatibility safe PDF download via blob to bypass sandboxed iframe cookie gates
+      const resumeBtn = document.getElementById('get-resume-btn');
+      if (resumeBtn) {
+        resumeBtn.addEventListener('click', (e) => {
+          e.preventDefault();
+          
+          const originalHTML = resumeBtn.innerHTML;
+          resumeBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> DOWNLOADING...';
+          resumeBtn.style.pointerEvents = 'none';
+
+          fetch('assets/Minhaz_CV.pdf')
+            .then(res => {
+              if (!res.ok) throw new Error('Network error');
+              return res.blob();
+            })
+            .then(blob => {
+              const url = URL.createObjectURL(blob);
+              const a = document.createElement('a');
+              a.href = url;
+              a.download = 'Resume_Minhaz_Uddin.pdf';
+              document.body.appendChild(a);
+              a.click();
+              document.body.removeChild(a);
+              setTimeout(() => URL.revokeObjectURL(url), 100);
+            })
+            .catch(err => {
+              console.error('Blob download failed, falling back to direct tab', err);
+              window.open('assets/Minhaz_CV.pdf', '_blank');
+            })
+            .finally(() => {
+              setTimeout(() => {
+                resumeBtn.innerHTML = originalHTML;
+                resumeBtn.style.pointerEvents = 'auto';
+              }, 1200);
+            });
+        });
+      }
+
+      // Floating Toast container styling for feedback
+      const toast = document.createElement('div');
+      toast.style.position = 'fixed';
+      toast.style.bottom = '30px';
+      toast.style.left = '50%';
+      toast.style.transform = 'translateX(-50%) translateY(100px)';
+      toast.style.background = 'rgba(18, 10, 41, 0.95)';
+      toast.style.color = '#05d0a4';
+      toast.style.border = '1px solid rgba(5, 208, 164, 0.4)';
+      toast.style.padding = '12px 24px';
+      toast.style.borderRadius = '30px';
+      toast.style.boxShadow = '0 10px 30px rgba(5, 208, 164, 0.2)';
+      toast.style.zIndex = '99999';
+      toast.style.transition = 'transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.3s';
+      toast.style.opacity = '0';
+      toast.style.fontSize = '0.9rem';
+      toast.style.fontWeight = '600';
+      toast.style.textAlign = 'center';
+      toast.style.pointerEvents = 'none';
+      toast.innerHTML = '<i class="fas fa-check-circle" style="margin-right: 8px;"></i> ইমেইল কপি করা হয়েছে: minhaz.al.din@gmail.com';
+      document.body.appendChild(toast);
+
+      // Click event listener for the entire email card box
+      const emailCard = document.getElementById('email-card');
+      const emailLink = document.getElementById('email-link');
+      if (emailCard && emailLink) {
+        emailCard.addEventListener('click', (e) => {
+          // If they click on the link directly, let the link handle it
+          if (e.target === emailLink) return;
+          
+          // Otherwise, click the link programmatically
+          emailLink.click();
+        });
+      }
+
+      // Click event listener to COPY email address on "Let's Work Together!" box click
+      const copyCard = document.getElementById('copy-card');
+      const emailAddressToCopy = "minhaz.al.din@gmail.com";
+
+      function copyEmailToClipboard() {
+        try {
+          navigator.clipboard.writeText(emailAddressToCopy).then(() => {
+            showToast();
+          }).catch(() => {
+            // Backup styling copy
+            const dummyInput = document.createElement('input');
+            dummyInput.value = emailAddressToCopy;
+            document.body.appendChild(dummyInput);
+            dummyInput.select();
+            document.execCommand('copy');
+            document.body.removeChild(dummyInput);
+            showToast();
+          });
+        } catch (err) {
+          showToast();
+        }
+      }
+
+      if (copyCard) {
+        copyCard.addEventListener('click', (e) => {
+          e.preventDefault();
+          copyEmailToClipboard();
+        });
+      }
+
+      function showToast() {
+        toast.style.opacity = '1';
+        toast.style.transform = 'translateX(-50%) translateY(0px)';
+        setTimeout(() => {
+          toast.style.opacity = '0';
+          toast.style.transform = 'translateX(-50%) translateY(100px)';
+        }, 4000);
+      }
+    });
+
+    // Custom Smooth Scrolling with Damped/Slower Wheel control
+    let currentY = window.scrollY;
+    let targetY = window.scrollY;
+    let isMoving = false;
+    const speedFactor = 0.45; // Slower elegant speed factor
+    const easing = 0.085;     // Fluid friction ratio
+
+    window.addEventListener('scroll', () => {
+      if (!isMoving) {
+        targetY = window.scrollY;
+        currentY = window.scrollY;
+      }
+    });
+
+    window.addEventListener('wheel', (e) => {
+      // Direct pass-through for scrollable PDF viewer panels
+      const path = e.composedPath() || [];
+      let insidePDFScroll = false;
+      for (let el of path) {
+        if (el && el.classList && (el.classList.contains('pdf-pages-scroll') || el.classList.contains('pdf-thumbnails-scroll'))) {
+          insidePDFScroll = true;
+          break;
+        }
+      }
+      if (insidePDFScroll) return;
+
+      e.preventDefault();
+      targetY += e.deltaY * speedFactor;
+      
+      const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
+      targetY = Math.max(0, Math.min(targetY, maxScroll));
+
+      if (!isMoving) {
+        isMoving = true;
+        currentY = window.scrollY;
+        requestAnimationFrame(smoothScrollStep);
+      }
+    }, { passive: false });
+
+    function smoothScrollStep() {
+      if (!isMoving) return;
+      const diff = targetY - currentY;
+      
+      if (Math.abs(diff) > 0.5) {
+        currentY += diff * easing;
+        window.scrollTo({ top: currentY, behavior: 'instant' });
+        requestAnimationFrame(smoothScrollStep);
+      } else {
+        window.scrollTo({ top: targetY, behavior: 'instant' });
+        currentY = targetY;
+        isMoving = false;
+      }
+    }
+
+    // Responsive Mobile Drawer Toggle Logic
+    const sidebar = document.getElementById('sidebar');
+    const toggleBtn = document.getElementById('sidebarToggle');
+    
+    toggleBtn.addEventListener('click', (e) => {
+      sidebar.classList.toggle('active');
+      e.stopPropagation();
+    });
+
+    // Close menu when links are tapped on mobile viewport screens
+    const navLinks = document.querySelectorAll('.sidebar-nav li a');
+    
+    // Smooth scroll navigation on click
+    navLinks.forEach(link => {
+      link.addEventListener('click', (e) => {
+        const href = link.getAttribute('href');
+        const targetSection = document.querySelector(href);
+        
+        if (targetSection) {
+          e.preventDefault();
+          
+          // Collapse drawer menu on mobile
+          sidebar.classList.remove('active');
+
+          const isMobile = window.innerWidth <= 991;
+          const offsetTop = targetSection.offsetTop - (isMobile ? 60 : 0);
+
+          window.scrollTo({
+            top: offsetTop,
+            behavior: 'smooth'
+          });
+
+          // Update URL hash state elegantly
+          history.pushState(null, null, href);
+
+          // Update active layout classes immediately
+          navLinks.forEach(item => item.parentElement.classList.remove('active'));
+          link.parentElement.classList.add('active');
+        }
+      });
+    });
+
+    // Detect click outside drawer to close active drawer
+    document.addEventListener('click', (e) => {
+      if (!sidebar.contains(e.target) && e.target !== toggleBtn && !toggleBtn.contains(e.target)) {
+        sidebar.classList.remove('active');
+      }
+    });
+
+    // Persistent Scroll Section Active Highlighter
+    const sections = document.querySelectorAll('section');
+
+    function updateActiveSectionHighlighter() {
+      let currentSectionId = 'hero';
+      const isMobile = window.innerWidth <= 991;
+      // Centering scroll buffer to update indicator smoothly when mostly visible
+      const scrollPos = window.scrollY + (isMobile ? 120 : 180);
+
+      sections.forEach(section => {
+        const top = section.offsetTop;
+        if (scrollPos >= top - 20) {
+          currentSectionId = section.getAttribute('id');
+        }
+      });
+
+      navLinks.forEach(link => {
+        const hrefValue = link.getAttribute('href');
+        if (hrefValue === `#${currentSectionId}`) {
+          link.parentElement.classList.add('active');
+        } else {
+          link.parentElement.classList.remove('active');
+        }
+      });
+    }
+
+    // Bind scroll and viewport resize listeners for precise tracking
+    window.addEventListener('scroll', updateActiveSectionHighlighter);
+    window.addEventListener('resize', updateActiveSectionHighlighter);
+
+    // Initial check on DOM Load
+    window.addEventListener('DOMContentLoaded', () => {
+      updateActiveSectionHighlighter();
+
+      // Typewriter Effect for Hero Subsection
+      const typedTextSpan = document.querySelector(".hero-content h2 .typed-text");
+      if (typedTextSpan) {
+        const textArray = ["Web Developer", "Creative Programmer", "Full Stack Developer", "ButterFly Programmer"];
+        const typingDelay = 100;
+        const erasingDelay = 60;
+        const newTextDelay = 2000; // Delay between current and next text
+        let textArrayIndex = 0;
+        let charIndex = textArray[0].length; // start with first text fully typed
+
+        function type() {
+          if (charIndex < textArray[textArrayIndex].length) {
+            if (typedTextSpan) {
+              typedTextSpan.textContent += textArray[textArrayIndex].charAt(charIndex);
+            }
+            charIndex++;
+            setTimeout(type, typingDelay);
+          } else {
+            setTimeout(erase, newTextDelay);
+          }
+        }
+
+        function erase() {
+          if (charIndex > 0) {
+            if (typedTextSpan) {
+              typedTextSpan.textContent = textArray[textArrayIndex].substring(0, charIndex - 1);
+            }
+            charIndex--;
+            setTimeout(erase, erasingDelay);
+          } else {
+            textArrayIndex++;
+            if (textArrayIndex >= textArray.length) textArrayIndex = 0;
+            setTimeout(type, typingDelay + 400);
+          }
+        }
+
+        // Start typing loop
+        setTimeout(erase, newTextDelay);
+      }
+      
+      // Auto smooth scroll to initial hash section if loaded directly
+      const initialHash = window.location.hash;
+      if (initialHash) {
+        const targetSection = document.querySelector(initialHash);
+        if (targetSection) {
+          setTimeout(() => {
+            const isMobile = window.innerWidth <= 991;
+            const offsetTop = targetSection.offsetTop - (isMobile ? 60 : 0);
+            window.scrollTo({
+              top: offsetTop,
+              behavior: 'smooth'
+            });
+          }, 350);
+        }
+      }
+    });
+
+    // Run fallback check to prevent layout matching lag
+    setTimeout(updateActiveSectionHighlighter, 100);
+
+    // PDF.js Integration to render the PDF in a beautiful, feature-rich Chrome-like custom PDF viewer
+    (function() {
+      return; // PDF.js disabled, native browser PDF rendering active
+      if (typeof pdfjsLib !== 'undefined') {
+        pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.4.120/pdf.worker.min.js';
+        
+        const loader = document.getElementById('pdf-main-loader');
+        const workspaceScroll = document.getElementById('pdf-pages-scroll-container');
+        const thumbnailsContainer = document.getElementById('pdf-thumbnails-container');
+        const sidebarPane = document.getElementById('pdf-sidebar-pane');
+        const sidebarToggle = document.getElementById('pdf-sidebar-toggle-btn');
+        const currentPageInput = document.getElementById('pdf-current-page-input');
+        const totalPagesSpan = document.getElementById('pdf-total-pages-span');
+        const zoomSelect = document.getElementById('pdf-zoom-select');
+        
+        // Active Toolbar buttons
+        const btnZoomIn = document.getElementById('pdf-btn-zoom-in');
+        const btnZoomOut = document.getElementById('pdf-btn-zoom-out');
+        const btnFit = document.getElementById('pdf-btn-fit');
+        const btnRotate = document.getElementById('pdf-btn-rotate');
+        const btnDraw = document.getElementById('pdf-btn-draw');
+        const btnUndo = document.getElementById('pdf-btn-undo');
+        const btnRedo = document.getElementById('pdf-btn-redo');
+        const btnAnnotate = document.getElementById('pdf-btn-annotate');
+        const btnDownload = document.getElementById('pdf-btn-download');
+        const btnPrint = document.getElementById('pdf-btn-print');
+        const btnMore = document.getElementById('pdf-btn-more');
+        
+        // State variables
+        let pdfDoc = null;
+        let scaleValue = "1.0"; // Float scale as string or "fit" or "width"
+        let rotationDegrees = 0;
+        let totalPages = 1;
+        let activePageNum = 1;
+        let isRendering = false;
+        
+        // Drawing & Annotations Engine States
+        let isDrawModeActive = false;
+        let isHighlightModeActive = false;
+        let pageStrokes = {}; // Dictionary of arrays { pNum: [stroke1, stroke2] }
+        let undoHistory = []; // Stack of { pageNum, stroke }
+        let redoHistory = []; // Stack of { pageNum, stroke }
+        
+        // Custom temporary elegant notification/toast mechanism
+        function showToast(message) {
+          let toast = document.getElementById('pdf-toast');
+          if (!toast) {
+            toast = document.createElement('div');
+            toast.id = 'pdf-toast';
+            toast.style.position = 'absolute';
+            toast.style.bottom = '20px';
+            toast.style.right = '20px';
+            toast.style.backgroundColor = '#202124';
+            toast.style.color = '#ffffff';
+            toast.style.padding = '10px 18px';
+            toast.style.borderRadius = '4px';
+            toast.style.fontSize = '0.85rem';
+            toast.style.boxShadow = '0 4px 15px rgba(0,0,0,0.3)';
+            toast.style.zIndex = '9999';
+            toast.style.fontFamily = 'sans-serif';
+            toast.style.transition = 'opacity 0.3s ease, transform 0.3s ease';
+            toast.style.borderLeft = '4px solid #1a73e8';
+            toast.style.display = 'flex';
+            toast.style.alignItems = 'center';
+            toast.style.gap = '10px';
+            document.body.appendChild(toast);
+          }
+          toast.innerHTML = `<i class="fas fa-info-circle" style="color: #1a73e8;"></i> <span>${message}</span>`;
+          toast.style.opacity = '1';
+          toast.style.transform = 'translateY(0)';
+          
+          if (toast.timeoutId) clearTimeout(toast.timeoutId);
+          toast.timeoutId = setTimeout(() => {
+            toast.style.opacity = '0';
+            toast.style.transform = 'translateY(10px)';
+          }, 2500);
+        }
+        
+        // Load Document
+        pdfjsLib.getDocument('assets/Minhaz_CV.pdf').promise.then(function(pdf) {
+          pdfDoc = pdf;
+          totalPages = pdf.numPages;
+          totalPagesSpan.textContent = totalPages;
+          currentPageInput.max = totalPages;
+          
+          if (loader) loader.style.display = 'none';
+          
+          // Responsive default scale based on initial workspace layout
+          const containerWidth = workspaceScroll ? workspaceScroll.clientWidth : 800;
+          if (containerWidth < 650) {
+            scaleValue = "0.75";
+          } else if (containerWidth < 992) {
+            scaleValue = "1.0";
+          } else {
+            scaleValue = "1.25";
+          }
+          if (zoomSelect) zoomSelect.value = scaleValue;
+          
+          // Initial renders
+          renderAllPages();
+          renderThumbnails();
+          
+          // Setup listeners
+          setupListeners();
+          
+        }).catch(function(error) {
+          console.error('PDF.js loading failed:', error);
+          if (loader) {
+            loader.innerHTML = '<i class="fas fa-exclamation-triangle" style="font-size: 2rem; color: #ef4444;"></i>' +
+                               '<span style="margin-top: 10px;">Failed to load PDF viewer. Please use the direct download link instead.</span>';
+          }
+        });
+        
+        // Helper to solve exact sizing per page based on current selection
+        function getPageScale(page) {
+          if (scaleValue === 'fit') {
+            const unscaledViewport = page.getViewport({ scale: 1.0 });
+            // Height of workspace is about 800px, fit page centers it completely
+            return 720 / unscaledViewport.height;
+          } else if (scaleValue === 'width') {
+            const unscaledViewport = page.getViewport({ scale: 1.0 });
+            const containerWidth = workspaceScroll ? workspaceScroll.clientWidth : 800;
+            // Subtract scrollbars and spacing margin
+            return (containerWidth - 50) / unscaledViewport.width;
+          } else {
+            return parseFloat(scaleValue) || 1.15;
+          }
+        }
+        
+        // Redraw page strokes on high-resolution canvas container
+        function redrawPageStrokes(pNum, canvas) {
+          const context = canvas.getContext('2d');
+          const strokes = pageStrokes[pNum] || [];
+          strokes.forEach(stroke => {
+            if (stroke.points.length < 1) return;
+            context.beginPath();
+            context.lineJoin = 'round';
+            context.lineCap = 'round';
+            context.strokeStyle = stroke.color;
+            context.lineWidth = stroke.width;
+            
+            context.moveTo(stroke.points[0].x, stroke.points[0].y);
+            for (let i = 1; i < stroke.points.length; i++) {
+              context.lineTo(stroke.points[i].x, stroke.points[i].y);
+            }
+            context.stroke();
+          });
+        }
+        
+        // Redraw single page directly without complete render cycle
+        function redrawSinglePageAnnotations(pNum) {
+          const pageCard = document.getElementById('pdf-page-card-' + pNum);
+          if (pageCard) {
+            const canvas = pageCard.querySelector('canvas');
+            if (canvas && pdfDoc) {
+              pdfDoc.getPage(pNum).then(page => {
+                const pageScale = getPageScale(page);
+                const viewport = page.getViewport({ scale: pageScale, rotation: rotationDegrees });
+                const context = canvas.getContext('2d');
+                
+                context.clearRect(0, 0, canvas.width, canvas.height);
+                
+                // Re-render PDF layer page
+                const dpr = window.devicePixelRatio || 1;
+                context.save();
+                context.scale(dpr, dpr);
+                const renderContext = {
+                  canvasContext: context,
+                  viewport: viewport
+                };
+                page.render(renderContext).promise.then(() => {
+                  context.restore();
+                  redrawPageStrokes(pNum, canvas);
+                });
+              });
+            }
+          }
+        }
+        
+        // Setup Brush drawing listeners on rendered canvasses
+        function attachDrawingListeners(canvas, pNum) {
+          const context = canvas.getContext('2d');
+          let isDrawingNow = false;
+          let currentStroke = null;
+          
+          function getCoords(e) {
+            const rect = canvas.getBoundingClientRect();
+            const scaleX = canvas.width / rect.width;
+            const scaleY = canvas.height / rect.height;
+            const clientX = e.touches ? e.touches[0].clientX : e.clientX;
+            const clientY = e.touches ? e.touches[0].clientY : e.clientY;
+            return {
+              x: (clientX - rect.left) * scaleX,
+              y: (clientY - rect.top) * scaleY
+            };
+          }
+          
+          function startDraw(e) {
+            if (!isDrawModeActive && !isHighlightModeActive) return;
+            isDrawingNow = true;
+            const coords = getCoords(e);
+            
+            // Highlight tool utilizes a transparent yellow marker, pen utilizes sharp red stroke
+            currentStroke = {
+              type: isHighlightModeActive ? 'highlight' : 'draw',
+              color: isHighlightModeActive ? 'rgba(255, 208, 67, 0.4)' : '#ff3860',
+              width: isHighlightModeActive ? 18 : 3,
+              points: [coords]
+            };
+            
+            context.beginPath();
+            context.lineJoin = 'round';
+            context.lineCap = 'round';
+            context.strokeStyle = currentStroke.color;
+            context.lineWidth = currentStroke.width;
+          }
+          
+          function drawMove(e) {
+            if (!isDrawingNow || !currentStroke) return;
+            e.preventDefault();
+            const coords = getCoords(e);
+            currentStroke.points.push(coords);
+            
+            // Direct immediate coordinate drawing
+            const pts = currentStroke.points;
+            context.beginPath();
+            context.lineJoin = 'round';
+            context.lineCap = 'round';
+            context.strokeStyle = currentStroke.color;
+            context.lineWidth = currentStroke.width;
+            
+            // Canvas coordinate mapping
+            const dpr = window.devicePixelRatio || 1;
+            // Draw path directly scaled
+            context.moveTo(pts[pts.length - 2].x / dpr, pts[pts.length - 2].y / dpr);
+            context.lineTo(pts[pts.length - 1].x / dpr, pts[pts.length - 1].y / dpr);
+            context.stroke();
+          }
+          
+          function endDraw(e) {
+            if (!isDrawingNow || !currentStroke) return;
+            isDrawingNow = false;
+            if (currentStroke.points.length > 1) {
+              if (!pageStrokes[pNum]) pageStrokes[pNum] = [];
+              pageStrokes[pNum].push(currentStroke);
+              undoHistory.push({ pageNum: pNum, stroke: currentStroke });
+              redoHistory = []; // Clear redo list
+            }
+            currentStroke = null;
+            // Perform clean scale normalize redraw
+            redrawSinglePageAnnotations(pNum);
+          }
+          
+          canvas.addEventListener('mousedown', startDraw);
+          canvas.addEventListener('mousemove', drawMove);
+          canvas.addEventListener('mouseup', endDraw);
+          canvas.addEventListener('mouseleave', endDraw);
+          
+          canvas.addEventListener('touchstart', startDraw, { passive: false });
+          canvas.addEventListener('touchmove', drawMove, { passive: false });
+          canvas.addEventListener('touchend', endDraw);
+        }
+        
+        // Render Pages Sequentially inside Main Workspace
+        function renderAllPages() {
+          if (!pdfDoc || !workspaceScroll) return;
+          
+          // Clear and display loader if desired
+          const existingLoader = document.getElementById('pdf-main-loader');
+          workspaceScroll.innerHTML = '';
+          if (existingLoader) workspaceScroll.appendChild(existingLoader);
+          
+          isRendering = true;
+          
+          // Chain page renders consecutively to avoid worker pipeline crowding
+          let renderPromise = Promise.resolve();
+          
+          for (let pageNum = 1; pageNum <= totalPages; pageNum++) {
+            (function(pNum) {
+              renderPromise = renderPromise.then(() => {
+                return pdfDoc.getPage(pNum).then(function(page) {
+                  // Create container card for the page
+                  const pageCard = document.createElement('div');
+                  pageCard.className = 'pdf-page-card';
+                  pageCard.id = 'pdf-page-card-' + pNum;
+                  pageCard.setAttribute('data-page', pNum);
+                  
+                  // Setup Canvas
+                  const pageScale = getPageScale(page);
+                  const viewport = page.getViewport({ scale: pageScale, rotation: rotationDegrees });
+                  const canvas = document.createElement('canvas');
+                  canvas.className = 'pdf-rendered-canvas';
+                  
+                  // Set drawing cursors if draw mode is toggled
+                  if (isDrawModeActive || isHighlightModeActive) {
+                    canvas.style.cursor = 'crosshair';
+                  } else {
+                    canvas.style.cursor = 'default';
+                  }
+                  
+                  const context = canvas.getContext('2d');
+                  
+                  // Setup High-DPI layout settings to make text exceptionally clear and readable
+                  const dpr = window.devicePixelRatio || 1;
+                  canvas.width = viewport.width * dpr;
+                  canvas.height = viewport.height * dpr;
+                  canvas.style.width = viewport.width + 'px';
+                  canvas.style.height = viewport.height + 'px';
+                  
+                  pageCard.appendChild(canvas);
+                  workspaceScroll.appendChild(pageCard);
+                  
+                  // Context mapping
+                  context.scale(dpr, dpr);
+                  
+                  const renderContext = {
+                    canvasContext: context,
+                    viewport: viewport
+                  };
+                  return page.render(renderContext).promise.then(() => {
+                    // Draw active annotations
+                    redrawPageStrokes(pNum, canvas);
+                    // Bind drawing handlers
+                    attachDrawingListeners(canvas, pNum);
+                  });
+                });
+              });
+            })(pageNum);
+          }
+          
+          renderPromise.then(() => {
+            isRendering = false;
+            updateActivePageHighlight();
+          });
+        }
+        
+        // Render Tiny Previews inside Left Sidebar Page Nav
+        function renderThumbnails() {
+          if (!pdfDoc || !thumbnailsContainer) return;
+          
+          thumbnailsContainer.innerHTML = '';
+          
+          for (let pageNum = 1; pageNum <= totalPages; pageNum++) {
+            (function(pNum) {
+              pdfDoc.getPage(pNum).then(function(page) {
+                // Wrapper trigger container
+                const thumbWrap = document.createElement('div');
+                thumbWrap.className = 'pdf-thumbnail-wrap';
+                thumbWrap.id = 'pdf-thumb-wrap-' + pNum;
+                thumbWrap.setAttribute('data-page-num', pNum);
+                
+                if (pNum === activePageNum) {
+                  thumbWrap.classList.add('active');
+                }
+                
+                const canvasContainer = document.createElement('div');
+                canvasContainer.className = 'pdf-thumb-canvas-container';
+                
+                const canvas = document.createElement('canvas');
+                canvas.className = 'pdf-thumb-canvas';
+                const context = canvas.getContext('2d');
+                
+                // Keep sidebar thumbnails fit securely (typically target width 110px)
+                const targetWidth = 110;
+                const unscaledViewport = page.getViewport({ scale: 1.0 });
+                const thumbScale = targetWidth / unscaledViewport.width;
+                const viewport = page.getViewport({ scale: thumbScale, rotation: rotationDegrees });
+                
+                canvas.width = viewport.width;
+                canvas.height = viewport.height;
+                
+                canvasContainer.appendChild(canvas);
+                
+                const numLabel = document.createElement('div');
+                numLabel.className = 'pdf-thumb-num';
+                numLabel.textContent = pNum;
+                
+                thumbWrap.appendChild(canvasContainer);
+                thumbWrap.appendChild(numLabel);
+                thumbnailsContainer.appendChild(thumbWrap);
+                
+                // Add click scroll logic to jump to targets
+                thumbWrap.addEventListener('click', function() {
+                  const targetCard = document.getElementById('pdf-page-card-' + pNum);
+                  if (targetCard) {
+                    targetCard.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    setActivePage(pNum);
+                  }
+                });
+                
+                const renderContext = {
+                  canvasContext: context,
+                  viewport: viewport
+                };
+                page.render(renderContext);
+              });
+            })(pageNum);
+          }
+        }
+        
+        // Helper to update active page state securely
+        function setActivePage(num) {
+          if (num < 1 || num > totalPages) return;
+          activePageNum = num;
+          if (currentPageInput) currentPageInput.value = num;
+          
+          // Update sidebar selected ring highlight
+          const thumbWraps = document.querySelectorAll('.pdf-thumbnail-wrap');
+          thumbWraps.forEach(wrap => {
+            const wrapPage = parseInt(wrap.getAttribute('data-page-num'), 10);
+            if (wrapPage === num) {
+              wrap.classList.add('active');
+            } else {
+              wrap.classList.remove('active');
+            }
+          });
+        }
+        
+        // Sync scroll bar updates back with page selectors
+        function updateActivePageHighlight() {
+          if (!workspaceScroll) return;
+          
+          const pageCards = document.querySelectorAll('.pdf-page-card');
+          if (pageCards.length === 0) return;
+          
+          const containerBounds = workspaceScroll.getBoundingClientRect();
+          const containerCenter = containerBounds.top + (containerBounds.height / 2);
+          
+          let closestPage = 1;
+          let minDistance = Infinity;
+          
+          pageCards.forEach(card => {
+            const cardBounds = card.getBoundingClientRect();
+            const cardCenter = cardBounds.top + (cardBounds.height / 2);
+            const distance = Math.abs(cardCenter - containerCenter);
+            
+            if (distance < minDistance) {
+              minDistance = distance;
+              closestPage = parseInt(card.getAttribute('data-page'), 10);
+            }
+          });
+          
+          if (closestPage !== activePageNum) {
+            setActivePage(closestPage);
+          }
+        }
+        
+        // Synchronize updated scale values with zoom Select state dropdown
+        function syncZoomSelectUI() {
+          if (!zoomSelect) return;
+          if (scaleValue === 'fit' || scaleValue === 'width') {
+            zoomSelect.value = scaleValue;
+          } else {
+            // Check if exact option matches, else find closest
+            let matchFound = false;
+            for (let i = 0; i < zoomSelect.options.length; i++) {
+              if (parseFloat(zoomSelect.options[i].value) === parseFloat(scaleValue)) {
+                zoomSelect.value = zoomSelect.options[i].value;
+                matchFound = true;
+                break;
+              }
+            }
+            if (!matchFound) {
+              // Select closest options
+              let minDiff = Infinity;
+              let closestValue = "1.00";
+              for (let i = 0; i < zoomSelect.options.length; i++) {
+                const optVal = parseFloat(zoomSelect.options[i].value);
+                if (!isNaN(optVal)) {
+                  const diff = Math.abs(optVal - parseFloat(scaleValue));
+                  if (diff < minDiff) {
+                    minDiff = diff;
+                    closestValue = zoomSelect.options[i].value;
+                  }
+                }
+              }
+              zoomSelect.value = closestValue;
+            }
+          }
+        }
+        
+        // Binding UI Buttons and Interactivity Controls
+        function setupListeners() {
+          // Sidebar Toggle Function
+          if (sidebarToggle && sidebarPane) {
+            sidebarToggle.addEventListener('click', function() {
+              sidebarPane.classList.toggle('collapsed');
+              sidebarToggle.classList.toggle('active');
+            });
+            
+            // Start collapsed on small viewports by default
+            if (window.innerWidth < 768) {
+              sidebarPane.classList.add('collapsed');
+              sidebarToggle.classList.remove('active');
+            }
+          }
+          
+          // Page input change manual trigger
+          if (currentPageInput) {
+            currentPageInput.addEventListener('change', function() {
+              let pageIndex = parseInt(currentPageInput.value, 10);
+              if (isNaN(pageIndex) || pageIndex < 1) pageIndex = 1;
+              if (pageIndex > totalPages) pageIndex = totalPages;
+              
+              const targetCard = document.getElementById('pdf-page-card-' + pageIndex);
+              if (targetCard) {
+                targetCard.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                setActivePage(pageIndex);
+              }
+            });
+            
+            currentPageInput.addEventListener('keydown', function(e) {
+              if (e.key === 'Enter') {
+                currentPageInput.blur();
+              }
+            });
+          }
+          
+          // Dropdown Zoom Select Listener
+          if (zoomSelect) {
+            zoomSelect.addEventListener('change', function() {
+              scaleValue = zoomSelect.value;
+              showToast(`Zoom level adjusted: ${scaleValue === 'fit' ? 'Fit Screen' : scaleValue === 'width' ? 'Fit Page Width' : Math.round(parseFloat(scaleValue)*100)+ '%'}`);
+              renderAllPages();
+            });
+          }
+          
+          // Zoom In Action
+          if (btnZoomIn) {
+            btnZoomIn.addEventListener('click', function() {
+              let numericScale = 1.0;
+              if (scaleValue === 'fit' || scaleValue === 'width') {
+                numericScale = 1.15;
+              } else {
+                numericScale = parseFloat(scaleValue);
+              }
+              
+              if (numericScale < 3.0) {
+                scaleValue = (numericScale + 0.15).toFixed(2);
+                syncZoomSelectUI();
+                renderAllPages();
+              }
+            });
+          }
+          
+          // Zoom Out Action
+          if (btnZoomOut) {
+            btnZoomOut.addEventListener('click', function() {
+              let numericScale = 1.0;
+              if (scaleValue === 'fit' || scaleValue === 'width') {
+                numericScale = 0.85;
+              } else {
+                numericScale = parseFloat(scaleValue);
+              }
+              
+              if (numericScale > 0.45) {
+                scaleValue = (numericScale - 0.15).toFixed(2);
+                syncZoomSelectUI();
+                renderAllPages();
+              }
+            });
+          }
+          
+          // Toggle Page Dimensions (Fit Page / Fit Width toggle)
+          if (btnFit) {
+            btnFit.addEventListener('click', function() {
+              if (scaleValue === 'fit') {
+                scaleValue = 'width';
+              } else {
+                scaleValue = 'fit';
+              }
+              syncZoomSelectUI();
+              showToast(`Scale mode: Fit ${scaleValue === 'fit' ? 'Page' : 'Width'}`);
+              renderAllPages();
+            });
+          }
+          
+          // Rotation Clockwise
+          if (btnRotate) {
+            btnRotate.addEventListener('click', function() {
+              rotationDegrees = (rotationDegrees + 90) % 360;
+              showToast(`Rotated document clockwise (${rotationDegrees}°)`);
+              renderAllPages();
+              renderThumbnails();
+            });
+          }
+          
+          // Scribble Pen Annotation Toggle
+          if (btnDraw) {
+            btnDraw.addEventListener('click', function() {
+              isDrawModeActive = !isDrawModeActive;
+              isHighlightModeActive = false; // Turn off highlight
+              
+              if (btnAnnotate) btnAnnotate.classList.remove('active');
+              btnDraw.classList.toggle('active', isDrawModeActive);
+              
+              const canvases = document.querySelectorAll('.pdf-rendered-canvas');
+              canvases.forEach(canvas => {
+                canvas.style.cursor = isDrawModeActive ? 'crosshair' : 'default';
+              });
+              
+              showToast(isDrawModeActive ? 'Scribble Drawing Mode Active (Click and drag to write)' : 'Drawing Brush Deactivated');
+            });
+          }
+          
+          // Highlighter Marker Annotation Toggle
+          if (btnAnnotate) {
+            btnAnnotate.addEventListener('click', function() {
+              isHighlightModeActive = !isHighlightModeActive;
+              isDrawModeActive = false; // Turn off writing
+              
+              if (btnDraw) btnDraw.classList.remove('active');
+              btnAnnotate.classList.toggle('active', isHighlightModeActive);
+              
+              const canvases = document.querySelectorAll('.pdf-rendered-canvas');
+              canvases.forEach(canvas => {
+                canvas.style.cursor = isHighlightModeActive ? 'crosshair' : 'default';
+              });
+              
+              showToast(isHighlightModeActive ? 'Highlight Marker Active (Drag over text to highlight)' : 'Highlighter Deactivated');
+            });
+          }
+          
+          // Interactive Action: UNDO last brush stroke
+          if (btnUndo) {
+            btnUndo.addEventListener('click', function() {
+              if (undoHistory.length < 1) {
+                showToast('Nothing to undo');
+                return;
+              }
+              const item = undoHistory.pop();
+              const pNum = item.pageNum;
+              
+              // Remove last stroke matching coordinates
+              if (pageStrokes[pNum]) {
+                pageStrokes[pNum].pop();
+                redoHistory.push(item);
+                redrawSinglePageAnnotations(pNum);
+                showToast(`Undone brush stroke on Page ${pNum}`);
+              }
+            });
+          }
+          
+          // Interactive Action: REDO last undone stroke
+          if (btnRedo) {
+            btnRedo.addEventListener('click', function() {
+              if (redoHistory.length < 1) {
+                showToast('Nothing to redo');
+                return;
+              }
+              const item = redoHistory.pop();
+              const pNum = item.pageNum;
+              
+              if (!pageStrokes[pNum]) pageStrokes[pNum] = [];
+              pageStrokes[pNum].push(item.stroke);
+              undoHistory.push(item);
+              
+              redrawSinglePageAnnotations(pNum);
+              showToast(`Redone brush stroke on Page ${pNum}`);
+            });
+          }
+          
+          // Interactive Action: More actions setting helper
+          if (btnMore) {
+            btnMore.addEventListener('click', function() {
+              showToast('Features: Drawing overlay, Zoom percentage selection, clockwise rotation, and high-DPI rendering active.');
+            });
+          }
+          
+          // Download Action
+          if (btnDownload) {
+            btnDownload.addEventListener('click', function(e) {
+              e.preventDefault();
+              const originalHTML = btnDownload.innerHTML;
+              btnDownload.innerHTML = '<i class="fas fa-spinner fa-spin"></i>';
+              btnDownload.style.pointerEvents = 'none';
+              
+              // Custom safe blob download to bypass iframe cookie verification issues
+              fetch('assets/Minhaz_CV.pdf')
+                .then(res => {
+                  if (!res.ok) throw new Error('Fetch file error');
+                  return res.blob();
+                })
+                .then(blob => {
+                  const url = URL.createObjectURL(blob);
+                  const a = document.createElement('a');
+                  a.href = url;
+                  a.download = 'Resume_Minhaz_Uddin.pdf';
+                  document.body.appendChild(a);
+                  a.click();
+                  document.body.removeChild(a);
+                  setTimeout(() => URL.revokeObjectURL(url), 100);
+                  showToast('Resume downloaded successfully!');
+                })
+                .catch(err => {
+                  console.error('Viewer fallback download:', err);
+                  const a = document.createElement('a');
+                  a.href = 'assets/Minhaz_CV.pdf';
+                  a.download = 'Resume_Minhaz_Uddin.pdf';
+                  a.target = '_blank';
+                  document.body.appendChild(a);
+                  a.click();
+                  document.body.removeChild(a);
+                })
+                .finally(() => {
+                  setTimeout(() => {
+                    btnDownload.innerHTML = originalHTML;
+                    btnDownload.style.pointerEvents = 'auto';
+                  }, 1200);
+                });
+            });
+          }
+          
+          // Safe high-compatibility PDF Printing via direct window pipeline
+          if (btnPrint) {
+            btnPrint.addEventListener('click', function() {
+              showToast('Opening print dialog viewport...');
+              const printTarget = window.open('assets/Minhaz_CV.pdf', '_blank');
+              if (printTarget) {
+                printTarget.focus();
+                printTarget.onload = function() {
+                  printTarget.print();
+                };
+              }
+            });
+          }
+          
+          // Scroll workspace observer setup
+          if (workspaceScroll) {
+            let scrollTimeout;
+            workspaceScroll.addEventListener('scroll', function() {
+              clearTimeout(scrollTimeout);
+              scrollTimeout = setTimeout(updateActivePageHighlight, 80);
+            });
+          }
+
+          // Re-render when switching to or resizing the resume tab to solve zero-width container issues
+          function handleResumeResizeAndRendering() {
+            if (pdfDoc) {
+              const containerWidth = workspaceScroll ? workspaceScroll.clientWidth : 0;
+              if (containerWidth > 100) {
+                if (scaleValue === "1.0" || scaleValue === "0.75" || scaleValue === "1.25" || scaleValue === "fit" || scaleValue === "width") {
+                  if (containerWidth < 650) {
+                    scaleValue = "0.75";
+                  } else if (containerWidth < 992) {
+                    scaleValue = "1.0";
+                  } else {
+                    scaleValue = "1.25";
+                  }
+                  if (zoomSelect) zoomSelect.value = scaleValue;
+                }
+              }
+              renderAllPages();
+              renderThumbnails();
+            }
+          }
+
+          window.addEventListener('hashchange', function() {
+            const hash = window.location.hash || '#hero';
+            if (hash === '#resume') {
+              handleResumeResizeAndRendering();
+            }
+          });
+
+          window.addEventListener('resize', handleResumeResizeAndRendering);
+        }
+      }
+    })();
+  </script>
+
+  <!-- Interactive Space Particles Starfield Background Simulation -->
+  <script>
+    (function() {
+      const canvas = document.getElementById('particles-canvas');
+      if (!canvas) return;
+
+      const ctx = canvas.getContext('2d');
+      const particles = [];
+      
+      let width = window.innerWidth;
+      let height = window.innerHeight;
+
+      // Adjust particle counts for optimal frame rate: desktop vs mobile
+      const maxParticles = width < 768 ? 40 : 100;
+      const connectionDist = width < 768 ? 85 : 115;
+      const mouseRadius = width < 768 ? 100 : 180;
+
+      // Track cursor coordinates
+      let mouse = { x: null, y: null, active: false, radius: mouseRadius };
+
+      window.addEventListener('mousemove', (e) => {
+        mouse.x = e.clientX;
+        mouse.y = e.clientY;
+        mouse.active = true;
+      });
+
+      window.addEventListener('mouseleave', () => {
+        mouse.x = null;
+        mouse.y = null;
+        mouse.active = false;
+      });
+
+      // Handle retina/high-DPI scaling gracefully
+      function resize() {
+        const dpr = window.devicePixelRatio || 1;
+        width = window.innerWidth;
+        height = window.innerHeight;
+        canvas.width = width * dpr;
+        canvas.height = height * dpr;
+        canvas.style.width = width + 'px';
+        canvas.style.height = height + 'px';
+        ctx.scale(dpr, dpr);
+      }
+
+      class Particle {
+        constructor() {
+          this.x = Math.random() * width;
+          this.y = Math.random() * height;
+          this.size = Math.random() * 2.2 + 1.0; // varying size between 1px and 3.2px
+          
+          // Speed scale to create deep parallax dimensions
+          this.speedScale = this.size < 1.6 ? 0.35 : (this.size > 2.6 ? 0.9 : 0.6);
+          
+          // Pure 360-degree organic float directions (velocity vectors)
+          this.vx = (Math.random() - 0.5) * 0.9 * this.speedScale;
+          this.vy = (Math.random() - 0.5) * 0.9 * this.speedScale;
+          
+          this.maxAlpha = Math.random() * 0.6 + 0.3; // Twinkle brightness range
+          this.alpha = Math.random() * this.maxAlpha;
+          this.fadeDir = Math.random() > 0.5 ? 1 : -1;
+          this.fadeSpeed = Math.random() * 0.005 + 0.002;
+        }
+
+        update() {
+          // Boundary collision with smooth bounce to maintain uniform spacing on the page
+          if (this.x < 0 || this.x > width) {
+            this.vx = -this.vx;
+          }
+          if (this.y < 0 || this.y > height) {
+            this.vy = -this.vy;
+          }
+
+          // Safe boundary corrections
+          if (this.x < 0) this.x = 0;
+          if (this.x > width) this.x = width;
+          if (this.y < 0) this.y = 0;
+          if (this.y > height) this.y = height;
+
+          // Interactive physics: push away softly from user's mouse cursor
+          if (mouse.active && mouse.x !== null && mouse.y !== null) {
+            const dx = this.x - mouse.x;
+            const dy = this.y - mouse.y;
+            const dist = Math.sqrt(dx * dx + dy * dy);
+            
+            if (dist < mouse.radius) {
+              const force = (mouse.radius - dist) / mouse.radius;
+              const forceDirectionX = dx / (dist || 1);
+              const forceDirectionY = dy / (dist || 1);
+              
+              const pushStrength = force * 2.0; // soft responsive bounce away from mouse
+              this.x += forceDirectionX * pushStrength;
+              this.y += forceDirectionY * pushStrength;
+            }
+          }
+
+          // Move
+          this.x += this.vx;
+          this.y += this.vy;
+
+          // Soft Twinkling
+          this.alpha += this.fadeSpeed * this.fadeDir;
+          if (this.alpha >= this.maxAlpha) {
+            this.alpha = this.maxAlpha;
+            this.fadeDir = -1;
+          } else if (this.alpha <= 0.1) {
+            this.alpha = 0.1;
+            this.fadeDir = 1;
+          }
+        }
+
+        draw() {
+          ctx.beginPath();
+          ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+          
+          if (this.size > 2.6) {
+            // Theme Neon teal primary highlight stars with subtle blur
+            ctx.fillStyle = `rgba(5, 208, 164, ${this.alpha * 1.2})`;
+            ctx.shadowBlur = 6;
+            ctx.shadowColor = '#05d0a4';
+          } else if (this.size < 1.6) {
+            // Far space silver/lavender dusty stars
+            ctx.fillStyle = `rgba(162, 175, 195, ${this.alpha * 0.8})`;
+            ctx.shadowBlur = 0;
+          } else {
+            // Soft white twinkling stars
+            ctx.fillStyle = `rgba(240, 248, 255, ${this.alpha})`;
+            ctx.shadowBlur = 3;
+            ctx.shadowColor = '#f0f8ff';
+          }
+
+          ctx.fill();
+          ctx.shadowBlur = 0; // Reset canvas shadows
+        }
+      }
+
+      function drawLines() {
+        for (let i = 0; i < particles.length; i++) {
+          const p1 = particles[i];
+
+          // 1. Interactive Star-to-Cursor vector connections
+          if (mouse.active && mouse.x !== null && mouse.y !== null) {
+            const dx = p1.x - mouse.x;
+            const dy = p1.y - mouse.y;
+            const dist = Math.sqrt(dx * dx + dy * dy);
+            
+            if (dist < mouse.radius) {
+              const opacity = (1 - dist / mouse.radius) * 0.28 * p1.alpha;
+              ctx.beginPath();
+              ctx.moveTo(p1.x, p1.y);
+              ctx.lineTo(mouse.x, mouse.y);
+              ctx.strokeStyle = `rgba(5, 208, 164, ${opacity})`; // Interactive neon teal lines
+              ctx.lineWidth = 0.75;
+              ctx.stroke();
+            }
+          }
+
+          // 2. Ambient Star-to-Star constellation pathways
+          for (let j = i + 1; j < particles.length; j++) {
+            const p2 = particles[j];
+            const dx = p1.x - p2.x;
+            const dy = p1.y - p2.y;
+            const dist = Math.sqrt(dx * dx + dy * dy);
+
+            if (dist < connectionDist) {
+              const opacity = (1 - dist / connectionDist) * 0.16 * ((p1.alpha + p2.alpha) / 2);
+              ctx.beginPath();
+              ctx.moveTo(p1.x, p1.y);
+              ctx.lineTo(p2.x, p2.y);
+              ctx.strokeStyle = `rgba(5, 208, 164, ${opacity})`; // Elegant connected web lines
+              ctx.lineWidth = 0.5;
+              ctx.stroke();
+            }
+          }
+        }
+      }
+
+      function animate() {
+        ctx.clearRect(0, 0, width, height);
+
+        particles.forEach(p => {
+          p.update();
+          p.draw();
+        });
+
+        drawLines();
+
+        requestAnimationFrame(animate);
+      }
+
+      function init() {
+        resize();
+        particles.length = 0; // ensure empty
+        for (let i = 0; i < maxParticles; i++) {
+          particles.push(new Particle());
+        }
+        animate();
+      }
+
+      window.addEventListener('resize', () => {
+        const prevWidth = width;
+        const prevHeight = height;
+        resize();
+        particles.forEach(p => {
+          p.x = (p.x / prevWidth) * width;
+          p.y = (p.y / prevHeight) * height;
+        });
+      });
+
+      if (document.readyState === 'complete' || document.readyState === 'interactive') {
+        init();
+      } else {
+        window.addEventListener('DOMContentLoaded', init);
+      }
+    })();
+  </script>
+
+</body>
+</html>
