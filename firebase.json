@@ -1,0 +1,11 @@
+{
+  "hosting": {
+    "site": "mdminhazuddin",
+    "public": "minhaz.github.io-master",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}
